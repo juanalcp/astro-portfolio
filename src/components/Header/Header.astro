@@ -1,0 +1,28 @@
+---
+import HeaderIcon from "./HeaderIcon.astro";
+import HeaderLink from "./HeaderLink.astro";
+import GithubButton from "./GithubButton.astro";
+---
+
+<header class="mx-12">
+  <div
+    class="flex flex-row justify-between h-20 items-center gap-40 bg-b w-full px-10"
+  >
+    <HeaderIcon class="text-b h-full w-fit" />
+    <nav class="flex justify-between w-1/2">
+      <HeaderLink href="https://www.google.com/">Anchor 1</HeaderLink>
+      <HeaderLink href="https://www.google.com/">Anchor 2</HeaderLink>
+      <HeaderLink href="https://www.google.com/">Anchor 3</HeaderLink>
+    </nav>
+    <div class="flex flex-row gap-2">
+      <GithubButton />
+    </div>
+  </div>
+</header>
+
+<style>
+  header {
+    height: 82px;
+    background: linear-gradient(0.05turn, #080117, #2a223b, #080117);
+  }
+</style>

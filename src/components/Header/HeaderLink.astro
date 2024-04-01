@@ -1,0 +1,12 @@
+---
+interface Props {
+  href: string;
+}
+---
+
+<a
+  class="text-white text-xl transition transform hover:scale-110 w-max"
+  href={Astro.props.href}
+>
+  <slot />
+</a>
